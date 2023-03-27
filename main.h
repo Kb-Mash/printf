@@ -14,7 +14,7 @@
 #define F_HASH 8
 #define F_SPACE 16
 
-/* SIZE */
+/* SIZES */
 #define S_LONG 2
 #define S_SHORT 1
 
@@ -39,11 +39,9 @@ struct fmt
  */
 typedef struct fmt fmt_t;
 
-
 int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
-va_list list, char buffer[], int flags, int width,
-int precision, int size);
+va_list list, char buffer[], int flags, int width, int precision, int size);
 
 /****************** FUNCTIONS ******************/
 
